@@ -28,6 +28,7 @@ export default async function Nav() {
               lineplay
             </LocalizedClientLink>
           </div>
+          
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
