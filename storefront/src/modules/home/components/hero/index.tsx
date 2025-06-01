@@ -7,13 +7,13 @@ const Hero = () => {
       <div className="w-full text-center py-16">
         <Heading
           level="h1"
-          className="text-3xl leading-10 text-ui-fg-base font-normal"
+          className="text-3xl leading-10 text-ui-fg-base font-bold uppercase mb-4"
         >
          Strategy in Thread
         </Heading>
         <Heading
           level="h2"
-          className="text-3xl leading-10 text-ui-fg-base font-normal"
+          className="text-xl leading-2 text-ui-fg-base font-normal"
         >
          A curated release of collectible chess T-shirts.<br />
          Each print a game. Each drop a move.

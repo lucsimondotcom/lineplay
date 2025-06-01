@@ -34,30 +34,52 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="py-12 px-4 border-b border-black">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="product p-4 text-center">
-            <p><strong>The story</strong>Every detail deliberate. Born in France, executed with precision. A line of garments inspired by tactical aesthetics and limited like fine prints.</p>
+
+
+      <section className="border-b border-black">
+        <div className="grid grid-cols-1 md:grid-cols-3 ">
+          <div className="product">
+            <img
+              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80"
+              alt="The story"
+              className="w-full h-[300px] object-cover mb-4"
+            />
+            <p className="p-10"><strong>The story</strong>Every detail deliberate. Born in France, executed with precision. A line of garments inspired by tactical aesthetics and limited like fine prints.</p>
           </div>
-          <div className="product p-4 text-center">
-            <p><strong>Craftmanship</strong>Screen-printed by hand, one by one. Each shirt is an artifact. On organic Stanley/Stella cotton. No shortcuts. No second takes.</p>
+          <div className="product">
+            <img
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80"
+              alt="Craftmanship"
+              className="w-full h-[300px] object-cover mb-4"
+            />
+            <p className="p-10"><strong>Craftmanship</strong>Screen-printed by hand, one by one. Each shirt is an artifact. On organic Stanley/Stella cotton. No shortcuts. No second takes.</p>
           </div>
-          <div className="product p-4 text-center">
-            <p><strong>Ethos</strong>Quiet power. We don't shout. We suggest. Lineplay builds worlds—each drop is an entry, a concept, a signal for those who recognize the nuance.</p>
+          <div className="product">
+            <img
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80"
+              alt="Ethos"
+              className="w-full h-[300px] object-cover mb-4"
+            />
+            <p className="p-10"><strong>Ethos</strong>Quiet power. We don't shout. We suggest. Lineplay builds worlds—each drop is an entry, a concept, a signal for those who recognize the nuance.</p>
           </div>
         </div>
       </section>
 
       <section className="py-12 px-4 border-b border-black">
-        <div className="max-w-7xl mx-auto ">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <div className="feature p-4 text-center">🇫🇷 Made in France</div>
-          <div className="feature p-4 text-center">🌱 100% Organic Cotton</div>
-          <div className="feature p-4 text-center">🎯 Limited Editions</div>
-          <div className="feature p-4 text-center">🌍 Worldwide Shipping</div>
-          <div className="feature p-4 text-center">🖐 Hand Screen-Printed</div>
-          <div className="feature p-4 text-center">♟ Premium Craft</div>
-        </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-center text-sm tracking-wider font-light">
+            <span className="text-lg mr-2">🇫🇷</span>Made in France
+            <span className="mx-8 text-neutral-300">•</span>
+            <span className="text-lg mr-2">🌱</span>100% Organic Cotton
+            <span className="mx-8 text-neutral-300">•</span>
+            <span className="text-lg mr-2">🎯</span>Limited Editions
+            <span className="mx-8 text-neutral-300">•</span>
+            <span className="text-lg mr-2">🌍</span>Worldwide Shipping
+            <span className="mx-8 text-neutral-300">•</span>
+            <span className="text-lg mr-2">🖐</span>Hand Screen-Printed
+            <span className="mx-8 text-neutral-300">•</span>
+            <span className="text-lg mr-2">♟</span>Premium Craft
+          </div>
         </div>
       </section>
 
