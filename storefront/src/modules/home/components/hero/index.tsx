@@ -80,7 +80,7 @@ const Hero = () => {
          Each print a game. Each drop a move.
         </Heading>
       </div>
-      <div className="w-3/4 relative overflow-hidden" ref={imageContainerRef}>
+      <div className="w-full md:w-3/4 relative overflow-hidden" ref={imageContainerRef}>
         <img 
           src="/images/hero.png" 
           alt="Hero image" 
@@ -88,7 +88,7 @@ const Hero = () => {
         />
         <div 
           ref={popinRef}
-          className="absolute bg-black text-white px-6 py-3 rounded-lg shadow-lg pointer-events-none z-50"
+          className="absolute bg-black text-white px-6 py-3 shadow-lg pointer-events-none z-50"
           style={{ 
             left: '50%',
             top: '50%',

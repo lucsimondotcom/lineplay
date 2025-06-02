@@ -77,15 +77,13 @@ export default async function Home({
             <span className="text-lg mr-2">🌍</span>Worldwide Shipping
             <span className="mx-8 text-neutral-300">•</span>
             <span className="text-lg mr-2">🖐</span>Hand Screen-Printed
-            <span className="mx-8 text-neutral-300">•</span>
-            <span className="text-lg mr-2">♟</span>Premium Craft
           </div>
         </div>
       </section>
 
       <section className="py-12">
         <ul className="flex flex-col gap-x-6">
-        <h4 className="text-2xl font-bold mb-6 text-center">Pre-order the drop 001 release</h4>
+        <h4 className="text-2xl font-bold mt-6 text-center">Pre-order the drop 001 release</h4>
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </section>

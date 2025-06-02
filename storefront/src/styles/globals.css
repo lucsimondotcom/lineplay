@@ -9,6 +9,10 @@
 }
 
 @layer utilities {
+
+  html, body {
+    overflow-x: hidden;
+  }
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;

@@ -31,21 +31,24 @@ export default async function ProductPreview({
 
   return (
     <LocalizedClientLink href={`/products/${product.handle}`} className="group">
-      <div data-testid="product-wrapper">
+      <div data-testid="product-wrapper" className="border border-black bg-ui-bg-subtle">
         <Thumbnail
           thumbnail={product.thumbnail}
           images={product.images}
           size="full"
           isFeatured={isFeatured}
         />
-        <div className="flex txt-compact-medium mt-4 justify-between">
-          <Text className="text-ui-fg-subtle" data-testid="product-title">
+        <div className="flex txt-compact-medium mt-4 p-4 justify-between border-t border-black">
+          <Text className="text-ui-fg-subtle uppercase" data-testid="product-title">
             {product.title}
           </Text>
           <div className="flex items-center gap-x-2">
             {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
           </div>
         </div>
+        <button className="w-full mt-4 hover:bg-black hover:text-white uppercase border-t border-black py-3 px-4 hover:bg-gray-800 transition-colors">
+          Secure your piece
+        </button>
       </div>
     </LocalizedClientLink>
   )

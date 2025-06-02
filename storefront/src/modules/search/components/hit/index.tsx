@@ -27,7 +27,7 @@ const Hit = ({ hit }: HitProps) => {
     >
       <Container
         key={hit.id}
-        className="flex sm:flex-col gap-2 w-full p-4 shadow-elevation-card-rest hover:shadow-elevation-card-hover items-center sm:justify-center"
+        className="flex sm:flex-col gap-2 w-full p-4 hover:shadow-elevation-card-hover items-center sm:justify-center"
       >
         <Thumbnail
           thumbnail={hit.thumbnail}
