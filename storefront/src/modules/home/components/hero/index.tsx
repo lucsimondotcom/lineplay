@@ -76,8 +76,8 @@ const Hero = () => {
           level="h2"
           className="text-xl leading-2 text-ui-fg-base font-normal"
         >
-         A curated release of collectible chess T-shirts.<br />
-         Each print a game. Each drop a move.
+         A curated release of hand screen printed collectibles.<br />
+         Each print a game, each drop a move.
         </Heading>
       </div>
       <div className="w-full md:w-3/4 relative overflow-hidden" ref={imageContainerRef}>
