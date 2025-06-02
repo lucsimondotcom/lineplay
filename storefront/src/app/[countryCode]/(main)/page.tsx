@@ -40,7 +40,7 @@ export default async function Home({
         <div className="grid grid-cols-1 md:grid-cols-3 ">
           <div className="product">
             <img
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80"
+              src="/images/1.jpg"
               alt="The story"
               className="w-full h-[300px] object-cover mb-4"
             />
@@ -48,7 +48,7 @@ export default async function Home({
           </div>
           <div className="product">
             <img
-              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80"
+              src="/images/2.jpg"
               alt="Craftmanship"
               className="w-full h-[300px] object-cover mb-4"
             />
@@ -56,7 +56,7 @@ export default async function Home({
           </div>
           <div className="product">
             <img
-              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80"
+              src="/images/3.jpg"
               alt="Ethos"
               className="w-full h-[300px] object-cover mb-4"
             />

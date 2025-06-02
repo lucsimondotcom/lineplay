@@ -7,49 +7,68 @@ export const metadata: Metadata = {
 
 const ExplorePage = () => {
   return (
-    <div className="content-container py-6">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-8" data-testid="explore-page-title">
-          Explore Our Story
-        </h1>
-        
-        <div className="prose prose-lg">
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
-            <p className="text-gray-700">
-              We are dedicated to creating exceptional products that enhance your daily life. 
-              Our commitment to quality, innovation, and customer satisfaction drives everything we do.
-            </p>
-          </section>
+    <div className="">
+      <section className="t">
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Values</h2>
-            <ul className="list-disc pl-6 text-gray-700">
-              <li className="mb-2">Quality craftsmanship in every product</li>
-              <li className="mb-2">Sustainable and ethical practices</li>
-              <li className="mb-2">Customer-centric approach</li>
-              <li className="mb-2">Innovation and continuous improvement</li>
-            </ul>
-          </section>
+  <div className="text-center py-20 px-4 md:px-12">
+    <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Beyond the Game</h1>
+    <p className="mt-4 text-lg md:text-xl text-gray-600">We are dedicated to creating exceptional products that enhance your daily life. Our commitment to quality, innovation, and customer satisfaction drives everything we do. A chess-inspired studio from Libourne, France – between Bordeaux and Saint-Émilion.<br />Quality craftsmanship in every product
+Sustainable and ethical practices
+Customer-centric approach
+Innovation and continuous improvement</p>
+    <img className="mx-auto mt-10 w-full max-w-4xl rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?q=80&w=1600&h=900&auto=format&fit=crop" alt="Chess Lifestyle" />
+  </div>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Journey</h2>
-            <p className="text-gray-700">
-              Founded with a vision to revolutionize the industry, we've grown from a small startup 
-              to a trusted name in the market. Our journey is marked by continuous learning, 
-              adaptation, and a steadfast commitment to our core values.
-            </p>
-          </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Join Us</h2>
-            <p className="text-gray-700">
-              We invite you to be part of our story. Whether you're a customer, partner, or team member, 
-              together we can create something extraordinary.
-            </p>
-          </section>
-        </div>
-      </div>
+  <div className="bg-gray-100 py-16 px-6 md:px-20">
+    <h2 className="text-3xl font-semibold text-center mb-4">Every Move Matters</h2>
+    <p className="max-w-3xl mx-auto text-center text-lg text-gray-700">
+      We believe in a world where conflict is resolved through thought, not force. Chess is our symbol. Our shirts are our voice. Each move is a statement. Each drop, a stand for peace.
+    </p>
+    <blockquote className="mt-6 text-center text-xl font-medium text-gray-900">“We don't play war. We play ideas.”</blockquote>
+  </div>
+
+
+  <div className="py-16 px-6 md:px-20">
+    <h2 className="text-3xl font-semibold text-center mb-4">The Art of the Puzzle</h2>
+    <p className="max-w-3xl mx-auto text-center text-lg text-gray-700">
+      Each puzzle in our drops is handpicked. Mate-in-3s. 5x5 boards. Smart and subtle. Not overused. Always sharp.
+    </p>
+    <img className="mx-auto mt-10 w-full max-w-2xl rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=1600&h=900&auto=format&fit=crop" alt="Chess Puzzle" />
+  </div>
+
+
+  <div className="bg-gray-100 py-16 px-6 md:px-20">
+    <h2 className="text-3xl font-semibold text-center mb-4">Printed by Hand, Made to Last</h2>
+    <p className="max-w-3xl mx-auto text-center text-lg text-gray-700">
+      Screen printed in France. Organic cotton. Limited drops. No compromises.
+    </p>
+    <img className="mx-auto mt-10 w-full max-w-2xl rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1600&h=900&auto=format&fit=crop" alt="Screen Printing" />
+  </div>
+
+
+  <div className="py-16 px-6 md:px-20">
+    <h2 className="text-3xl font-semibold text-center mb-4">A Modern Code</h2>
+    <p className="max-w-3xl mx-auto text-center text-lg text-gray-700">
+      Our custom chess piece set is geometric, Bauhaus-inspired, and made for visual impact — even in small format. Because every shape tells a story.
+    </p>
+    <img className="mx-auto mt-10 w-full max-w-3xl rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?q=80&w=1600&h=900&auto=format&fit=crop" alt="Custom Chess Pieces" />
+  </div>
+
+
+  <div className="bg-gray-100 py-16 px-6 md:px-20">
+    <h2 className="text-3xl font-semibold text-center mb-4">Open Board, Open Mind</h2>
+    <p className="max-w-3xl mx-auto text-center text-lg text-gray-700">
+      We support open source. We play on Lichess. We build from passion. Our goal is clear: wear your ideas and share your voice.
+    </p>
+  </div>
+
+
+  <div className="text-center py-20 px-4 md:px-12">
+    <p className="text-2xl font-semibold text-gray-800">Style is a move. Peace is a message. Let's play.</p>
+    <div className="mt-6 text-sm text-gray-500">– Lineplay Studio</div>
+  </div>
+</section>
     </div>
   )
 }
