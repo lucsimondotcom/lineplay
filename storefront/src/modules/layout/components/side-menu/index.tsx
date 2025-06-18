@@ -10,7 +10,7 @@ import CountrySelect from "../country-select"
 import { HttpTypes } from "@medusajs/types"
 
 const SideMenuItems = {
-  Shop: "/store",
+  Shop: "/collections/featured",
   Explore: "/explore",
   Play: "/play",
 }
