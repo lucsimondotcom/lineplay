@@ -20,15 +20,12 @@
 @layer base {
   html, body {
     background-color: #ffffff;
-<<<<<<< HEAD
     font-family: 'FK Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
   }
   
   /* Force FK Grotesk on all elements including Medusa UI components */
   * {
     font-family: 'FK Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
-=======
->>>>>>> 6762dde86d6a9f679caa78883b951461a3923a67
   }
 }
 
