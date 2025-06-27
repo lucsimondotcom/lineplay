@@ -74,7 +74,7 @@ const Hero = () => {
         </Heading>
         <Heading
           level="h2"
-          className="text-xs uppercase leading-4 text-ui-fg-base font-normal"
+          className="text-sm uppercase leading-5 text-ui-fg-base font-normal"
         >
          A curated release of hand screen printed collectibles.<br />
          Each print a game, each drop a move.
