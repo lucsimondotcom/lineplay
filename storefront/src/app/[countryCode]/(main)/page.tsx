@@ -52,11 +52,7 @@ export default async function Home({
             Conceived between logic and art. Each drop is a move—a thought made visible.
             From Libourne to your hands: an idea sharpened into form.
           </p>
-          <div className="px-10 pb-10">
-            <button className="px-6 py-2 border border-black hover:bg-black hover:text-white transition-colors">
-              Learn More
-            </button>
-          </div>
+
         </div>
 
 
@@ -71,11 +67,7 @@ export default async function Home({
             Pulled by hand. No automation. No compromise.
             Organic cotton from Stanley/Stella, printed one by one—slowly, precisely.
           </p>
-          <div className="px-10 pb-10">
-            <button className="px-6 py-2 border border-black hover:bg-black hover:text-white transition-colors">
-              Learn More
-            </button>
-          </div>
+   
         </div>
 
  
@@ -91,11 +83,7 @@ export default async function Home({
             Each shirt is an argument, each puzzle a philosophy.
             Style is the surface. Meaning lies beneath.
           </p>
-          <div className="px-10 pb-10">
-            <button className="px-6 py-2 border border-black hover:bg-black hover:text-white transition-colors">
-              Learn More
-            </button>
-          </div>
+     
         </div>
 
       </div>

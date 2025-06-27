@@ -60,6 +60,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
+          "FK Grotesk",
           "Inter",
           "-apple-system",
           "BlinkMacSystemFont",
