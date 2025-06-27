@@ -28,14 +28,20 @@ export default async function Home({
     <>
       <Hero />
 
+
+
       <section className="py-12 px-4 border-t border-b border-black">
-        <div className="max-w-7xl mx-auto text-center text-3xl">
-        <h3>We are lineplay.</h3>
-        <p>Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</p>
+        <div className="max-w-7xl mx-auto text-center text-xl">
+        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
         </div>
       </section>
 
-
+      <section className="py-12">
+        <ul className="flex flex-col gap-x-6">
+        <h4 className="text-2xl uppercase mt-6 text-center">Pre-order</h4>
+          <FeaturedProducts collections={collections} region={region} />
+        </ul>
+      </section>
 
       <section className="border-b border-black">
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -161,14 +167,9 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="py-12">
-        <ul className="flex flex-col gap-x-6">
-        <h4 className="text-2xl font-bold mt-6 text-center">Pre-order the Drop_001 Release</h4>
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
-      </section>
 
-      <section className="py-12 border-t border-black"> 
+
+      <section className="py-12"> 
         <div className="max-w-7xl mx-auto text-center">
           <h4 className="text-2xl font-bold mb-6">stay tuned for the next drop</h4>
           <form className="max-w-md mx-auto">

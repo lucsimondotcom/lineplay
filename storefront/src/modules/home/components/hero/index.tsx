@@ -68,13 +68,13 @@ const Hero = () => {
       <div className="w-full text-center py-16">
         <Heading
           level="h1"
-          className="text-5xl leading-10 text-ui-fg-base font-bold uppercase mb-4"
+          className="text-2xl leading-10 text-ui-fg-base uppercase mb-1"
         >
-         Strategy in Thread
+         DP_PZL_01 limited
         </Heading>
         <Heading
           level="h2"
-          className="text-xl leading-2 text-ui-fg-base font-normal"
+          className="text-xs uppercase leading-4 text-ui-fg-base font-normal"
         >
          A curated release of hand screen printed collectibles.<br />
          Each print a game, each drop a move.
@@ -83,7 +83,7 @@ const Hero = () => {
       <div className="w-full md:w-3/4 relative overflow-hidden" ref={imageContainerRef}>
         <img 
           src="/images/hero.png" 
-          alt="Hero image" 
+          alt="DP_PZL_01 limited" 
           className="w-full object-cover"
         />
         <div 

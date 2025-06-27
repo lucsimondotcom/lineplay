@@ -96,21 +96,23 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
                 }
               }}
             >
-              <div className="txt-compact-small flex items-center gap-x-2">
+              <div className="txt-compact-small">
                 {current && (
                   <ReactCountryFlag
                     svg
                     style={{
-                      width: "14px",
-                      height: "14px",
+                      width: "24px",
+                      height: "24px",
+                      borderRadius: "100%",
+                      objectFit: "cover",
                     }}
                     countryCode={current.country ?? ""}
                   />
                 )}
-                {current ? current.label : "Select country"}
+               
               </div>
             </Listbox.Button>
-            <div className="flex relative w-full min-w-[200px]">
+            <div className="flex absolute w-full min-w-[200px]">
               <Transition
                 show={state}
                 as={Fragment}
