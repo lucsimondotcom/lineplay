@@ -15,13 +15,13 @@ export default async function Footer() {
       <div className="px-6 lg:px-24 flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
           <div>
-          <h4 className="text-2xl font-bold mb-6">stay tuned for the next drop</h4>
+          <h4 className="text-2xl font-bold mb-6">Stay tuned for the next drop</h4>
             <form className="max-w-md mx-auto">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input 
                   type="email" 
                   placeholder="Enter your email" 
-                  className="flex-1 px-4 py-3 border border-black focus:outline-none focus:ring-1 focus:ring-black" 
+                  className="flex-1 px-4 py-3 border border-ui-border-base focus:outline-none focus:ring-1 focus:ring-black" 
                   required
                 />
                 <button 
@@ -164,9 +164,9 @@ export default async function Footer() {
             className="w-full"
           />
         </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
-          <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Drawnpiece. All rights reserved
+        <div className="flex w-full mb-16 justify-between">
+          <Text className="text-xs">
+            © {new Date().getFullYear()} M8IN3. All rights reserved
           </Text>
           <MedusaCTA />
         </div>

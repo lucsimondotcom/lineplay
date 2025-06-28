@@ -39,9 +39,17 @@ export default async function Home({
         </ul>
       </section>
 
-      
+      <section className="py-12 px-4 border-t border-b border-ui-border-base">
+        <div className="max-w-7xl mx-auto text-center text-xl">
+        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
+        </div>
+      </section>
 
-      <section className="py-16 px-4 uppercase border-t border-black">
+      <section className="w-full h-screen relative">
+        <Image src="/images/hero.jpg" alt="Hero Image" fill className="object-cover" />
+      </section>
+
+      <section className="py-16 px-4 uppercase border-t border-ui-border-base">
         <div className="">
           <div className="w-full flex justify-evenly items-center text-sm">
             <div className="flex flex-col items-center">
@@ -113,11 +121,7 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="py-12 px-4 border-t border-b border-black">
-        <div className="max-w-7xl mx-auto text-center text-xl">
-        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
-        </div>
-      </section>
+
 
     </>
   )

@@ -31,14 +31,14 @@ export default async function ProductPreview({
 
   return (
     <LocalizedClientLink href={`/products/${product.handle}`} className="group">
-      <div data-testid="product-wrapper" className="border border-black bg-ui-bg-subtle">
+      <div data-testid="product-wrapper" className="border border-ui-border-base bg-ui-bg-subtle">
         <Thumbnail
           thumbnail={product.thumbnail}
           images={product.images}
           size="full"
           isFeatured={isFeatured}
         />
-        <div className="flex txt-compact-medium mt-4 p-4 justify-between border-t border-black">
+        <div className="flex txt-compact-medium mt-4 p-4 justify-between border-t border-ui-border-base">
           <Text className="text-ui-fg-subtle uppercase" data-testid="product-title">
             {product.title}
           </Text>
@@ -46,7 +46,7 @@ export default async function ProductPreview({
             {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
           </div>
         </div>
-        <button className="w-full mt-4 hover:bg-black hover:text-white uppercase border-t border-black py-3 px-4 hover:bg-gray-800 transition-colors">
+        <button className="w-full mt-4 hover:bg-black hover:text-white uppercase border-t border-ui-border-base py-3 px-4 hover:bg-gray-800 transition-colors">
           Secure your piece
         </button>
       </div>
