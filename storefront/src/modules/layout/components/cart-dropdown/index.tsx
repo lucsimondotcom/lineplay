@@ -15,8 +15,10 @@ import Thumbnail from "@modules/products/components/thumbnail"
 
 const CartDropdown = ({
   cart: cartState,
+  textColorClass,
 }: {
   cart?: HttpTypes.StoreCart | null
+  textColorClass?: string
 }) => {
   const [activeTimer, setActiveTimer] = useState<NodeJS.Timer | undefined>(
     undefined
@@ -78,7 +80,7 @@ const CartDropdown = ({
       <Popover className="relative h-full">
         <Popover.Button className="h-full">
           <LocalizedClientLink
-            className="hover:text-ui-fg-base"
+            className={`hover:text-ui-fg-base transition-colors duration-300 ${textColorClass || ""}`}
             href="/cart"
             data-testid="nav-cart-link"
           >{`Cart (${totalItems})`}</LocalizedClientLink>

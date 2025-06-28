@@ -6,14 +6,15 @@ import { HttpTypes } from "@medusajs/types"
 
 type CountrySelectNavProps = {
   regions: HttpTypes.StoreRegion[]
+  textColorClass?: string
 }
 
-const CountrySelectNav = ({ regions }: CountrySelectNavProps) => {
+const CountrySelectNav = ({ regions, textColorClass }: CountrySelectNavProps) => {
   const toggleState = useToggleState()
 
   return (
     <div className="hidden small:block">
-      <CountrySelect regions={regions} toggleState={toggleState} />
+      <CountrySelect regions={regions} toggleState={toggleState} textColorClass={textColorClass} />
     </div>
   )
 }

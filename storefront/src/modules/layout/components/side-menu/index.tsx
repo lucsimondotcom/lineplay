@@ -3,7 +3,8 @@
 import { Popover, Transition } from "@headlessui/react"
 import { ArrowRightMini, XMark } from "@medusajs/icons"
 import { Text, clx, useToggleState } from "@medusajs/ui"
-import { Fragment } from "react"
+import { Fragment, useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
@@ -17,6 +18,26 @@ const SideMenuItems = {
 
 const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
   const toggleState = useToggleState()
+  const pathname = usePathname()
+  const isHomepage = pathname === "/" || pathname.split("/").length === 2
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    if (!isHomepage) {
+      setIsScrolled(true)
+      return
+    }
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100)
+    }
+
+    handleScroll()
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [isHomepage])
+
+  const textColorClass = isHomepage && !isScrolled ? "text-white" : "text-black"
 
   return (
     <div className="h-full">
@@ -27,7 +48,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
             <LocalizedClientLink
               key={name}
               href={href}
-              className="text-xs hover:text-ui-fg-disabled uppercase"
+              className={`text-xs hover:text-ui-fg-disabled uppercase transition-colors duration-300 ${textColorClass}`}
               data-testid={`${name.toLowerCase()}-link`}
             >
               {name}
@@ -42,7 +63,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
               <div className="relative flex h-full">
                 <Popover.Button
                   data-testid="nav-menu-button"
-                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
+                  className={`relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base ${textColorClass}`}
                 >
                   Menu
                 </Popover.Button>

@@ -1,24 +1,33 @@
-import { notFound } from "next/navigation"
+"use client"
+
+import { useEffect, useState } from "react"
 import CartDropdown from "../cart-dropdown"
 import { enrichLineItems, retrieveCart } from "@lib/data/cart"
+import { HttpTypes } from "@medusajs/types"
 
-const fetchCart = async () => {
-  const cart = await retrieveCart()
-
-  if (!cart) {
-    return null
-  }
-
-  if (cart?.items?.length) {
-    const enrichedItems = await enrichLineItems(cart.items, cart.region_id!)
-    cart.items = enrichedItems
-  }
-
-  return cart
+interface CartButtonProps {
+  textColorClass?: string
 }
 
-export default async function CartButton() {
-  const cart = await fetchCart()
+export default function CartButton({ textColorClass }: CartButtonProps) {
+  const [cart, setCart] = useState<HttpTypes.StoreCart | null>(null)
 
-  return <CartDropdown cart={cart} />
+  useEffect(() => {
+    const fetchCart = async () => {
+      try {
+        const cartData = await retrieveCart()
+        if (cartData?.items?.length) {
+          const enrichedItems = await enrichLineItems(cartData.items, cartData.region_id!)
+          cartData.items = enrichedItems
+        }
+        setCart(cartData)
+      } catch (error) {
+        console.error("Error fetching cart:", error)
+      }
+    }
+
+    fetchCart()
+  }, [])
+
+  return <CartDropdown cart={cart} textColorClass={textColorClass} />
 }

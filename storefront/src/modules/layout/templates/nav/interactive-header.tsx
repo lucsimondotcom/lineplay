@@ -3,14 +3,12 @@
 import { useEffect, useRef, useState } from "react"
 import { usePathname } from "next/navigation"
 import gsap from "gsap"
-import { StoreRegion } from "@medusajs/types"
 
 interface InteractiveHeaderProps {
   children: React.ReactNode
-  regions: StoreRegion[]
 }
 
-const InteractiveHeader = ({ children, regions }: InteractiveHeaderProps) => {
+const InteractiveHeader = ({ children }: InteractiveHeaderProps) => {
   const pathname = usePathname()
   const isHomepage = pathname === "/" || pathname.split("/").length === 2
   const headerRef = useRef<HTMLDivElement>(null)

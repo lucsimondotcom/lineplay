@@ -18,9 +18,10 @@ type CountryOption = {
 type CountrySelectProps = {
   toggleState: StateType
   regions: HttpTypes.StoreRegion[]
+  textColorClass?: string
 }
 
-const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
+const CountrySelect = ({ toggleState, regions, textColorClass }: CountrySelectProps) => {
   const [current, setCurrent] = useState<
     | { country: string | undefined; region: string; label: string | undefined }
     | undefined
@@ -69,7 +70,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
   }, [state, close])
 
   const handleChange = (option: CountryOption) => {
-    updateRegion(option.country, currentPath)
+    window.location.href = `/${option.country}${currentPath}`
     close()
   }
 
@@ -87,7 +88,7 @@ const CountrySelect = ({ toggleState, regions }: CountrySelectProps) => {
         {({ open: listboxOpen }) => (
           <>
             <Listbox.Button 
-              className="py-1 w-full hover:text-ui-fg-base"
+              className={`py-1 w-full hover:text-ui-fg-base transition-colors duration-300 ${textColorClass || ""}`}
               onClick={() => {
                 if (listboxOpen) {
                   close()
