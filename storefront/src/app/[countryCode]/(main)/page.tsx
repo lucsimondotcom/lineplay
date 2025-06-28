@@ -46,7 +46,7 @@ export default async function Home({
       </section>
 
       <section className="w-full h-screen relative">
-        <Image src="/images/hero.jpg" alt="Hero Image" fill className="object-cover" />
+        <Image src="/images/hero_2.jpg" alt="Hero Image" fill className="object-cover" />
       </section>
 
       <section className="py-16 px-4 uppercase border-t border-ui-border-base">

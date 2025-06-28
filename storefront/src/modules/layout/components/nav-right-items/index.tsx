@@ -34,7 +34,7 @@ const NavRightItems = ({ regions }: NavRightItemsProps) => {
   const textColorClass = isHomepage && !isScrolled ? "text-white" : "text-black"
 
   return (
-    <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+    <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end uppercase">
       <div className="hidden small:flex items-center gap-x-6 h-full">
         {process.env.NEXT_PUBLIC_FEATURE_SEARCH_ENABLED && (
           <LocalizedClientLink
@@ -57,7 +57,7 @@ const NavRightItems = ({ regions }: NavRightItemsProps) => {
       <Suspense
         fallback={
           <LocalizedClientLink
-            className={`hover:text-ui-fg-base flex gap-2 transition-colors duration-300 ${textColorClass}`}
+            className={`hover:text-ui-fg-base uppercase flex gap-2 transition-colors duration-300 ${textColorClass}`}
             href="/cart"
             data-testid="nav-cart-link"
           >
