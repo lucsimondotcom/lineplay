@@ -8,6 +8,25 @@
   font-display: swap;
 }
 
+/* Times Now Font Face Declarations */
+@font-face {
+  font-family: 'Times Now';
+  src: url('/fonts/TimesNow-ExtraLight.woff2') format('woff2'),
+       url('/fonts/TimesNow-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Times Now';
+  src: url('/fonts/TimesNow-ExtraLightItalic.woff2') format('woff2'),
+       url('/fonts/TimesNow-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Override Medusa UI font family */
 :root {
   --font-family-sans: 'FK Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
@@ -88,6 +107,19 @@
 
   .contrast-btn {
     @apply px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200 ease-in;
+  }
+
+  /* Times Now Font Utilities */
+  .font-times-now {
+    font-family: 'Times Now', serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .font-times-now-italic {
+    font-family: 'Times Now', serif;
+    font-weight: 200;
+    font-style: italic;
   }
 
   .text-xsmall-regular {

@@ -19,12 +19,6 @@ export default function ProductRail({
 
   return (
     <div className="px-6 lg:px-24 py-12 small:py-24">
-      <div className="flex justify-between mb-8">
-        <Text className="txt-xlarge">{collection.title}</Text>
-        <InteractiveLink href={`/collections/${collection.handle}`}>
-          View all
-        </InteractiveLink>
-      </div>
       <ul className="grid grid-cols-1 w-full small:grid-cols-3 medium:grid-cols-3 gap-x-6 gap-y-8">
         {products &&
           products.map((product) => (

@@ -17,21 +17,21 @@ const Hero = () => {
       </div>
       
       {/* Text overlay at the bottom */}
-      <div className="absolute bottom-0 left-0 right-0 text-center pb-16 px-4 z-10">
+      <div className="absolute bottom-0 left-0 right-0 text-center pb-24 px-4 z-10">
         <Heading
           level="h1"
-          className="text-6xl text-white uppercase mb-1 drop-shadow-lg"
+          className="text-6xl text-white uppercase mb-1 drop-shadow-lg font-times-now"
         >
-         PZL_01 Release
+         PZL_01 Drop
         </Heading>
         <Heading
           level="h2"
-          className="text-6xl uppercase text-white font-normal drop-shadow-lg"
+          className="text-6xl uppercase text-white drop-shadow-lg font-times-now-italic"
         >
         Limited edition
         </Heading>
-        <Link href="/collections/pzl-01" className="text-white uppercase flex items-center gap-2">
-            Preorder the first drop...
+        <Link href="/collections/pzl-01" className="text-white text-sm underline uppercase flex items-center justify-center gap-2">
+            Pre-order now
         </Link>
       </div>
     </div>
