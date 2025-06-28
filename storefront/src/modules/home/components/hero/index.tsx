@@ -35,7 +35,7 @@ const Hero = () => {
       {/* Fullscreen background image */}
       <div ref={backgroundRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/hero_2.jpg" 
+          src="/images/hero_4.jpg" 
           alt="DP_PZL_01 limited" 
           className="w-full h-full object-cover"
         />
