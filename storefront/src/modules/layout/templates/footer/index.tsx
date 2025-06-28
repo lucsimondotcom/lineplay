@@ -1,6 +1,7 @@
 import { getCategoriesList } from "@lib/data/categories"
 import { getCollectionsList } from "@lib/data/collections"
 import { Text, clx } from "@medusajs/ui"
+import Image from "next/image"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
@@ -11,15 +12,26 @@ export default async function Footer() {
 
   return (
     <footer className="border-t border-ui-border-base w-full">
-      <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+      <div className="px-6 lg:px-24 flex flex-col w-full">
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
           <div>
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
-            >
-              Medusa Store
-            </LocalizedClientLink>
+          <h4 className="text-2xl font-bold mb-6">stay tuned for the next drop</h4>
+            <form className="max-w-md mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="flex-1 px-4 py-3 border border-black focus:outline-none focus:ring-1 focus:ring-black" 
+                  required
+                />
+                <button 
+                  type="submit" 
+                  className="px-8 py-3 bg-black text-white hover:bg-gray-900 transition-colors"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {product_categories && product_categories?.length > 0 && (
@@ -142,6 +154,15 @@ export default async function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+        <div className="w-full flex justify-center py-16">
+          <Image
+            src="/images/M8IN3-black.svg"
+            alt="M8IN3 Logo"
+            width={200}
+            height={50}
+            className="w-full"
+          />
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">

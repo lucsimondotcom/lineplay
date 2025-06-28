@@ -7,9 +7,9 @@ import { getCollectionsWithProducts } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
 
 export const metadata: Metadata = {
-  title: "lineplay - limited edition clothing",
+  title: "M8IN3 - Playful clothing",
   description:
-    "A curated release of hand screen printed collectibles.",
+    "Playful clothing for the modern thinker.",
 }
 
 export default async function Home({
@@ -30,11 +30,7 @@ export default async function Home({
 
 
 
-      <section className="py-12 px-4 border-t border-b border-black">
-        <div className="max-w-7xl mx-auto text-center text-xl">
-        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
-        </div>
-      </section>
+    
 
       <section className="py-12">
         <ul className="flex flex-col gap-x-6">
@@ -43,59 +39,9 @@ export default async function Home({
         </ul>
       </section>
 
-      <section className="border-b border-black">
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      
 
-  
-        <div>
-          <img
-            src="/images/2.jpg"
-            alt="Where It Begins"
-            className="w-full h-[600px] object-cover mb-4"
-          />
-          <h3 className="px-10 text-2xl font-bold">Where It Begins</h3>
-          <p className="p-10 text-gray-700">
-            Conceived between logic and art. Each drop is a move—a thought made visible.
-            From Libourne to your hands: an idea sharpened into form.
-          </p>
-
-        </div>
-
-
-        <div>
-          <img
-            src="/images/craftmanship.jpg"
-            alt="How It's Made"
-            className="w-full h-[600px] object-cover mb-4"
-          />
-          <h3 className="px-10 text-2xl font-bold">How It's Made</h3>
-          <p className="p-10 text-gray-700">
-            Pulled by hand. No automation. No compromise.
-            Organic cotton from Stanley/Stella, printed one by one—slowly, precisely.
-          </p>
-   
-        </div>
-
- 
-        <div>
-          <img
-            src="/images/ethos.jpg"
-            alt="What It Stands For"
-            className="w-full h-[600px] object-cover mb-4"
-          />
-          <h3 className="px-10 text-2xl font-bold">What It Stands For</h3>
-          <p className="p-10 text-gray-700">
-            We speak in systems and symbols.
-            Each shirt is an argument, each puzzle a philosophy.
-            Style is the surface. Meaning lies beneath.
-          </p>
-     
-        </div>
-
-      </div>
-    </section>
-
-      <section className="py-16 px-4 border-b border-black uppercase">
+      <section className="py-16 px-4 uppercase border-t border-black">
         <div className="">
           <div className="w-full flex justify-evenly items-center text-sm">
             <div className="flex flex-col items-center">
@@ -167,29 +113,12 @@ export default async function Home({
         </div>
       </section>
 
-
-
-      <section className="py-12"> 
-        <div className="max-w-7xl mx-auto text-center">
-          <h4 className="text-2xl font-bold mb-6">stay tuned for the next drop</h4>
-          <form className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-black focus:outline-none focus:ring-1 focus:ring-black"
-                required
-              />
-              <button
-                type="submit"
-                className="px-8 py-3 bg-black text-white hover:bg-gray-900 transition-colors"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
+      <section className="py-12 px-4 border-t border-b border-black">
+        <div className="max-w-7xl mx-auto text-center text-xl">
+        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
         </div>
       </section>
+
     </>
   )
 }

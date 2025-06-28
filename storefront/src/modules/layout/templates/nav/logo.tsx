@@ -40,9 +40,9 @@ const Logo = () => {
     >
       <Image
         src={isHomepage && !isScrolled ? "/images/M8IN3-white.svg" : "/images/M8IN3-black.svg"}
-        alt="Lineplay"
-        width={100}
-        height={22}
+        alt="M8IN3"
+        width={85}
+        height={19}
         priority
       />
     </LocalizedClientLink>

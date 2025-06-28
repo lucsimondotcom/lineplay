@@ -66,7 +66,7 @@ Innovation and continuous improvement</p>
 
   <div className="text-center py-20 px-4 md:px-12">
     <p className="text-2xl font-semibold text-gray-800">Style is a move. Peace is a message. Let's play.</p>
-    <div className="mt-6 text-sm text-gray-500">– Lineplay Studio</div>
+    <div className="mt-6 text-sm text-gray-500">– M8IN3</div>
   </div>
 </section>
     </div>
