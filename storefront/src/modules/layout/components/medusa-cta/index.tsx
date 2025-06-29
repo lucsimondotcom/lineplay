@@ -12,7 +12,7 @@ const MedusaCTA = () => {
         href="https://instagram.com" 
         target="_blank" 
         rel="noreferrer"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
+        className="hover:text-gray-900 transition-colors"
         aria-label="Follow us on Instagram"
       >
         <Instagram size="20" />
@@ -21,7 +21,7 @@ const MedusaCTA = () => {
         href="https://facebook.com" 
         target="_blank" 
         rel="noreferrer"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
+        className="hover:text-gray-900 transition-colors"
         aria-label="Follow us on Facebook"
       >
         <Facebook size="20" />
@@ -30,20 +30,12 @@ const MedusaCTA = () => {
         href="https://youtube.com" 
         target="_blank" 
         rel="noreferrer"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
+        className="hover:text-gray-900 transition-colors"
         aria-label="Follow us on YouTube"
       >
         <YouTube size="20" />
       </a>
-      <a 
-        href="https://linkedin.com" 
-        target="_blank" 
-        rel="noreferrer"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Follow us on LinkedIn"
-      >
-        <LinkedIn size="20" />
-      </a>
+     
     </div>
   )
 }

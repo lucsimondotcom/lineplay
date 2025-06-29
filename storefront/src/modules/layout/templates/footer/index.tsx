@@ -15,7 +15,7 @@ export default async function Footer() {
       <div className="px-6 lg:px-24 flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
           <div>
-          <h4 className="text-2xl font-bold mb-6">Stay tuned for the next drop</h4>
+          <h4 className="text-2xl font-times-now uppercase mb-6">Stay tuned for the next drop</h4>
             <form className="max-w-md mx-auto">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input 
@@ -165,8 +165,8 @@ export default async function Footer() {
           />
         </div>
         <div className="flex w-full mb-16 justify-between">
-          <Text className="text-xs">
-            © {new Date().getFullYear()} M8IN3. All rights reserved
+          <Text className="text-xs uppercase">
+            ©{new Date().getFullYear()} M8IN3 &#8226; Terms of Service &#8226; Privacy Policy
           </Text>
           <MedusaCTA />
         </div>

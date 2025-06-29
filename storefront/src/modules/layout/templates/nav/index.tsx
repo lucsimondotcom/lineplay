@@ -12,7 +12,7 @@ export default async function Nav() {
 
   return (
     <InteractiveHeader>
-      <header className="relative h-24 w-full">
+      <header className="relative h-16 lg:h-24 w-full">
         <nav className="px-6 lg:px-24 text-xs flex items-center justify-between w-full h-full text-small-regular">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">

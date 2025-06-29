@@ -43,7 +43,7 @@
   }
   
   /* Force FK Grotesk on all elements including Medusa UI components */
-  * {
+  *, button {
     font-family: 'FK Grotesk', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
   }
 }

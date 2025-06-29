@@ -7,9 +7,9 @@ import { getCollectionsWithProducts } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
 
 export const metadata: Metadata = {
-  title: "M8IN3 - Playful clothing",
+  title: "M8IN3 - Wear your Move.",
   description:
-    "Playful clothing for the modern thinker.",
+    "Premium games-inspired T-shirts. Wear your move with bold, strategic, and minimalist designs. Limited drops, made to play.",
 }
 
 export default async function Home({
@@ -34,7 +34,7 @@ export default async function Home({
 
       <section className="py-12">
         <ul className="flex flex-col gap-x-6">
-        <h4 className="text-2xl uppercase mt-6 text-center">Pre-order</h4>
+        <h4 className="text-2xl uppercase text-center">Pre-order</h4>
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </section>
