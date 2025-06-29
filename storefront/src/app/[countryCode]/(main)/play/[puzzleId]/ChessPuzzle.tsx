@@ -93,7 +93,7 @@ export function ChessPuzzle({ title, fen, solution }: ChessPuzzleProps) {
           </Link>
         </div>
         
-        <div className="p-4 bg-white rounded-lg shadow-md">
+        <div className="p-4 bg-white shadow-md">
           <div className="flex justify-between items-center mb-4">
             <button
               onClick={resetPuzzle}

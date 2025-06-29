@@ -29,7 +29,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
   return (
     <>
       <div
-        className="px-6 lg:px-24 flex flex-col small:flex-row small:items-start py-6 relative"
+        className="px-6 lg:px-24 flex flex-col small:flex-row small:items-start pb-6 relative"
         data-testid="product-container"
       >
     

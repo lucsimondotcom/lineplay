@@ -34,7 +34,7 @@ export default function PuzzleSelection() {
           <Link
             key={puzzle.id}
             href={`/play/${puzzle.id}`}
-            className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            className="block p-6 bg-white shadow-md hover:shadow-lg transition-shadow"
           >
             <h2 className="text-2xl font-semibold mb-2">{puzzle.title}</h2>
             <p className="text-gray-600">{puzzle.description}</p>
