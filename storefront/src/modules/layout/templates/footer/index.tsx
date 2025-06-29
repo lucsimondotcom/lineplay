@@ -13,7 +13,7 @@ export default async function Footer() {
   return (
     <footer className="border-t border-ui-border-base w-full">
       <div className="px-6 lg:px-24 flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-14">
           <div>
           <h4 className="text-2xl font-times-now uppercase mb-6">Stay tuned for the next drop</h4>
             <form className="max-w-md mx-auto">
@@ -164,9 +164,9 @@ export default async function Footer() {
             className="w-full"
           />
         </div>
-        <div className="flex w-full mb-16 justify-between">
+        <div className="flex w-full mb-6 lg:mb-12 justify-between">
           <Text className="text-xs uppercase">
-            ©{new Date().getFullYear()} M8IN3 &#8226; Terms of Service &#8226; Privacy Policy
+            ©{new Date().getFullYear()} M8IN3 &bull;  Terms &amp; Conditions &bull; Privacy Policy
           </Text>
           <MedusaCTA />
         </div>
