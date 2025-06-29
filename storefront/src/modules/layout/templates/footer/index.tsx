@@ -21,12 +21,12 @@ export default async function Footer() {
                 <input 
                   type="email" 
                   placeholder="Enter your email" 
-                  className="flex-1 px-4 py-3 border border-ui-border-base focus:outline-none focus:ring-1 focus:ring-black" 
+                  className="flex-1 text-xs px-4 py-3 border border-ui-border-base focus:outline-none focus:ring-1 focus:ring-black" 
                   required
                 />
                 <button 
                   type="submit" 
-                  className="px-8 py-3 bg-black text-white hover:bg-gray-900 transition-colors"
+                  className="px-8 py-3 bg-black text-white uppercase text-xs tracking-wider hover:bg-gray-900 transition-colors"
                 >
                   Subscribe
                 </button>
