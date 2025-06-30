@@ -11,28 +11,6 @@ type OptionSelectProps = {
   "data-testid"?: string
 }
 
-// Custom order for size options
-const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
-
-const sortSizeOptions = (options: string[]) => {
-  return options.sort((a, b) => {
-    const aIndex = SIZE_ORDER.indexOf(a.toUpperCase())
-    const bIndex = SIZE_ORDER.indexOf(b.toUpperCase())
-    
-    // If both are in the custom order, sort by their position
-    if (aIndex !== -1 && bIndex !== -1) {
-      return aIndex - bIndex
-    }
-    
-    // If only one is in the custom order, prioritize it
-    if (aIndex !== -1) return -1
-    if (bIndex !== -1) return 1
-    
-    // If neither is in the custom order, maintain original order
-    return 0
-  })
-}
-
 const OptionSelect: React.FC<OptionSelectProps> = ({
   option,
   current,
@@ -42,22 +20,6 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
   disabled,
 }) => {
   const filteredOptions = option.values?.map((v) => v.value)
-  
-  // Apply custom sorting for size options
-  const sortedOptions = React.useMemo(() => {
-    if (!filteredOptions) return []
-    
-    // Check if this is a size option (case insensitive)
-    const isSizeOption = title.toLowerCase().includes('size') || 
-                        title.toLowerCase().includes('taille') ||
-                        title.toLowerCase().includes('größe')
-    
-    if (isSizeOption) {
-      return sortSizeOptions([...filteredOptions])
-    }
-    
-    return filteredOptions
-  }, [filteredOptions, title])
 
   return (
     <div className="flex flex-col gap-y-3">
@@ -66,7 +28,7 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
         className="flex flex-wrap justify-between gap-2"
         data-testid={dataTestId}
       >
-        {sortedOptions?.map((v) => {
+        {filteredOptions?.map((v) => {
           return (
             <button
               onClick={() => updateOption(option.title ?? "", v ?? "")}

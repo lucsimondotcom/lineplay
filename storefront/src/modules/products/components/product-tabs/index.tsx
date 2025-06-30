@@ -18,10 +18,6 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       component: <ProductInfoTab product={product} />,
     },
     {
-      label: "Composition and care",
-      component: <CompositionAndCareTab />,
-    },
-    {
       label: "Shipping & Returns",
       component: <ShippingInfoTab />,
     },
@@ -76,36 +72,6 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
                 : "-"}
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const CompositionAndCareTab = () => {
-  return (
-    <div className="text-small-regular py-8">
-      <div className="flex flex-col gap-y-6">
-        <div>
-          <span className="font-semibold">Composition</span>
-          <p className="mt-2">
-            This product is crafted from premium materials selected for their durability and comfort. 
-            Each piece is carefully constructed to ensure long-lasting quality and exceptional fit.
-          </p>
-        </div>
-        <div>
-          <span className="font-semibold">Care Instructions</span>
-          <p className="mt-2">
-            To maintain the quality and appearance of your product, we recommend gentle hand washing 
-            with mild detergent in cold water. Avoid bleach and tumble drying. Iron on low heat if needed.
-          </p>
-        </div>
-        <div>
-          <span className="font-semibold">Storage</span>
-          <p className="mt-2">
-            Store in a cool, dry place away from direct sunlight. For best results, hang on appropriate 
-            hangers to maintain shape and prevent wrinkles.
-          </p>
         </div>
       </div>
     </div>
