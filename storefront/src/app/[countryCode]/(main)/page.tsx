@@ -32,21 +32,23 @@ export default async function Home({
 
     
 
-      <section className="py-12">
+      <section className="py-6">
         <ul className="flex flex-col gap-x-6">
-        <h4 className="text-2xl uppercase text-center">Pre-order</h4>
-          <FeaturedProducts collections={collections} region={region} />
+        <h4 className="text-xl mb-6 uppercase text-center max-w-2xl mx-auto">NEW RELEASE</h4>
+        <p className="text-xl font-times-now text-center max-w-2xl mx-auto">We connects style and intelligence. Each piece is a nod to those who love to play, think, and stand out. Limited editions, premium quality, infinite spirit.</p>
+        <FeaturedProducts collections={collections} region={region} />
         </ul>
       </section>
 
-      <section className="py-12 px-4 border-t border-b border-ui-border-base">
-        <div className="max-w-7xl mx-auto text-center text-xl">
-        <h3>We are Drawnpiece. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.</h3>
-        </div>
-      </section>
-
+     
       <section className="w-full h-screen relative">
         <Image src="/images/hero_3.jpg" alt="Hero Image" fill className="object-cover" />
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h3 className="max-w-5xl mx-auto text-center text-xl uppercase text-white p-6 rounded-lg">
+            We are M8IN3. Creators of limited edition garments at the intersection of design, chess, and meaning. For those who think deeply, move deliberately, and wear their convictions.
+          </h3>
+        </div>
       </section>
 
       <section className="py-16 px-4 uppercase border-t border-ui-border-base">

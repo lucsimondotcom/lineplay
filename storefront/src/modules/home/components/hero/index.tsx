@@ -35,7 +35,7 @@ const Hero = () => {
       {/* Fullscreen background image */}
       <div ref={backgroundRef} className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/hero_4.jpg" 
+          src="/images/hero_prefinal.jpg" 
           alt="DP_PZL_01 limited" 
           className="w-full h-full object-cover"
         />
@@ -47,7 +47,7 @@ const Hero = () => {
           level="h1"
           className="text-6xl text-white uppercase mb-1 drop-shadow-lg font-times-now"
         >
-         PZL_02 Drop
+         PZL_01 Drop
         </Heading>
         <Heading
           level="h2"
@@ -55,7 +55,7 @@ const Hero = () => {
         >
         Limited edition
         </Heading>
-        <Link href="/collections/pzl-01" className="text-white text-xs underline uppercase flex items-center justify-center gap-2 mt-4 underline-offset-4">
+        <Link href="/collections/featured" className="text-white text-xs underline uppercase flex items-center justify-center gap-2 mt-4 underline-offset-4">
             Pre-order now
         </Link>
       </div>

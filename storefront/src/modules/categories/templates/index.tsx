@@ -34,7 +34,7 @@ export default function CategoryTemplate({
       data-testid="category-container"
     >
       <RefinementList sortBy={sort} data-testid="sort-by-container" />
-      <div className="w-full">
+      <div className="w-full px-6 lg:px-24">
         <div className="flex flex-row mb-8 text-2xl-semi gap-4">
           {parents &&
             parents.map((parent) => (
