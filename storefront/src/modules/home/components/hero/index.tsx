@@ -7,22 +7,16 @@ import { useEffect, useRef } from "react"
 
 const Hero = () => {
   const textRef = useRef<HTMLDivElement>(null)
-  const backgroundRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
       const textElement = textRef.current
-      const backgroundElement = backgroundRef.current
 
-      if (textElement && backgroundElement) {
+      if (textElement) {
         // Text moves up faster (2x speed)
-        const textTranslateY = scrollY * 0.5
+        const textTranslateY = scrollY * 0.3
         textElement.style.transform = `translateY(-${textTranslateY}px)`
-
-        // Background moves slower (0.5x speed)
-        const backgroundTranslateY = scrollY * 0.2
-        backgroundElement.style.transform = `translateY(-${backgroundTranslateY}px)`
       }
     }
 
@@ -33,9 +27,9 @@ const Hero = () => {
   return (
     <div className="w-full h-screen relative flex flex-col overflow-hidden">
       {/* Fullscreen background image */}
-      <div ref={backgroundRef} className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full">
         <img 
-          src="/images/hero_prefinal.jpg" 
+          src="/images/hero_final.jpg" 
           alt="DP_PZL_01 limited" 
           className="w-full h-full object-cover"
         />

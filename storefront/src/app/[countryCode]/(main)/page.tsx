@@ -32,9 +32,9 @@ export default async function Home({
 
     
 
-      <section className="py-6">
+      <section className="pb-6 pt-20">
         <ul className="flex flex-col gap-x-6">
-        <h4 className="text-xl mb-6 uppercase text-center max-w-2xl mx-auto">NEW RELEASE</h4>
+        <h4 className="text-lg mb-6 uppercase text-center max-w-2xl mx-auto">NEW RELEASE</h4>
         <p className="text-xl font-times-now text-center max-w-2xl mx-auto">We connects style and intelligence. Each piece is a nod to those who love to play, think, and stand out. Limited editions, premium quality, infinite spirit.</p>
         <FeaturedProducts collections={collections} region={region} />
         </ul>
@@ -42,7 +42,7 @@ export default async function Home({
 
      
       <section className="w-full h-screen relative">
-        <Image src="/images/hero_prefinal.jpg" alt="Hero Image" fill className="object-cover" />
+        <Image src="/images/hero_final.jpg" alt="Hero Image" fill className="object-cover" />
 
         <div className="absolute inset-0 flex items-center justify-center">
           <h3 className="max-w-5xl mx-auto text-center text-xl uppercase text-white p-6 rounded-lg">
