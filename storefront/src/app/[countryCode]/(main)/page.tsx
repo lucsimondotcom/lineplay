@@ -42,7 +42,7 @@ export default async function Home({
 
      
       <section className="w-full h-screen relative">
-        <Image src="/images/hero_3.jpg" alt="Hero Image" fill className="object-cover" />
+        <Image src="/images/hero_prefinal.jpg" alt="Hero Image" fill className="object-cover" />
 
         <div className="absolute inset-0 flex items-center justify-center">
           <h3 className="max-w-5xl mx-auto text-center text-xl uppercase text-white p-6 rounded-lg">
